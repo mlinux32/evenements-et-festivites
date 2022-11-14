@@ -1,0 +1,155 @@
+/* général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color: #333;
+    font-family: 'Kalam', cursive;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid #555;
+    box-shadow: 5px 5px 0.5em #fff inset;
+    background: linear-gradient(tomato, tan 60%);
+    filter: brightness(90%);
+}
+
+header h1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in;
+}
+
+.element {
+    color: navy;
+    text-shadow: 1px 2px #fff;
+    transform: skewX(30deg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50rem;
+}
+
+.container ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin: 2rem;
+    filter: blur(0.6px);
+}
+
+.container ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.container ul li a {
+    color: navy;
+    text-decoration: none;
+}
+
+.container ul li .fa-gift {
+    color: navy;
+}
+
+/* separator */
+.separator-img {
+    background: url(./../Images/separateur.jpg) top center/cover;
+    border: 5px solid navy;
+    border-radius: 5px;
+    width: 100%;
+    height: 10rem;
+}
+
+/* présentation */
+.presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 5rem 5rem 5rem 5rem;
+    line-height: 1.5rem;
+}
+
+#presentation {
+    text-align: center;
+    color: navy;
+    text-shadow: 1px 2px #333;
+    padding-bottom: 2rem;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: #555;
+    width: 95%;
+    border-radius: 25px;
+    margin: 1rem 2rem 1rem 2rem;
+    padding-bottom: 2rem;
+}
+
+#contact {
+    color: navy;
+    text-shadow: 1px 2px #333;
+    padding-bottom: 2rem;
+}
+
+form {
+    text-shadow: 1px 2px #fff;
+    background: url(./../Images/contact.jpg) center center/cover;
+    width: 30rem;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+input {
+    border-bottom: 1rem;
+    border-radius: 5px;
+}
+
+textarea {
+    border-bottom: 1rem;
+    border-radius: 5px;
+}
+button {
+    background: tomato;
+    border: 1px 1px solid navy;
+    border-radius: 25px;
+    width: 5rem;
+    height: 2rem;
+    box-shadow: -2px -2px navy;
+}
+button:hover {
+    background: navy;
+    color: #fff;
+    box-shadow: 2px 2px tomato;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(./../Images/footer_noel.jpg) top center/cover;
+    height: 15rem;
+    border: 5px solid #333;
+    border-radius: 5px;
+}
+
+span {
+    color: #fff;
+    text-shadow: 1.5px 2px tomato;
+    text-align: center;
+}
